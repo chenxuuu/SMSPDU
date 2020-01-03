@@ -1,0 +1,19 @@
+<Window x:Class="SMSPDU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMSPDU"
+        mc:Ignorable="d"
+        Title="SMSPDU - www.openluat.com" Height="310" Width="500">
+    <StackPanel Margin="5,5,5,0">
+        <TextBlock Text="接收短信手机号："/>
+        <TextBox x:Name="tel"/>
+        <TextBlock Text="短信内容："/>
+        <TextBox x:Name="sms"/>
+        <Button Content="生成结果" Click="Button_Click"/>
+        <TextBlock Text="AT命令生成结果"/>
+        <TextBox x:Name="at" Height="150" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+        <TextBlock Text="openluat 合宙 2020" HorizontalAlignment="Right"/>
+    </StackPanel>
+</Window>
